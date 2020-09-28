@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Sora;
+}
+
+.account-page {
+    min-height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    font-family: 'Sora';
+    padding: 20px 80px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.nav-bar .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar .content a {
+    text-decoration: none;
+    padding: 0px 36px;
+    font-family: 'Sora';
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+}
+
+.nav-bar .content a:hover {
+    transition: 0.5s;
+    color: #F24C27;
+}
+
+.nav-bar .cart-account {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .cart-account a {
+    font-family: 'Sora';
+    text-decoration: none;
+    padding-left: 19px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: white;
+}
+
+.nav-bar .cart-account a:hover {
+    transition: 0.5s;
+    color: #F24C27;
+}
+
+#home {
+    color: #F24C27;
+}
+
+.nav-bar .cart-account a img {
+    width: 28px;
+    height: 25px;
+}
+
+.account-page .account {
+    background-color: #333333;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+
+.account-page .account .account-title h2 {
+    color: #ffffff;
+    margin-bottom: 1em;
+}
+
+.account-page .account .account-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.account-page .account .account-list .pict {
+    width: 200px;
+    height: 200px;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+.account-page .account .account-list .picture a {
+    background-color: #F24C27;
+    text-decoration: none;
+    color: #ffffff;
+    padding: .5em 2.4em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.account-page .account .account-list .profile {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.account-page .account .account-list .profile .sub-profile {
+    width: 100%;
+    color: #F24C27;
+}
+
+.account-page .account .account-list .profile .list {
+    display: flex;
+    flex-direction: row;
+}
+
+.account-page .account .account-list .profile .list p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.account-page .account .account-list .profile .list .right1 {
+    padding-left: 3.5em;
+}
+
+.account-page .account .account-list .profile .list .right2 {
+    padding-left: 1em;
+}
+
+.account-page .account .account-list .account-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.account-page .account .account-list .account-button a {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 1em;
+    background-color: #DFDFDF;
+    padding: .3em 1.3em;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.account-page .account .account-list .account-button #edit {
+    color: #ffffff;
+    background-color: #F24C27;
+}

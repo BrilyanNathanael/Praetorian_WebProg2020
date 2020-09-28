@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-page .register {
+    /* border: 2px solid #d8c021; */
+    padding: 2em;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 6px 6px #f0f0f0;
+}
+
+.register-page .register .red-line {
+    background-color: #cd000f;
+    width: 3em;
+    height: .3em;
+}
+
+.register-page .register h2 {
+    font-weight: 1000;
+    color: #000000;
+}
+
+.register-page .register form input {
+    width: 20em;
+    margin: 1em 0;
+}
+
+.register-page .register form .button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.register-page .register form .button button {
+    padding: .5em 1em;
+    background-color: white;
+    border: 1px solid #cd000f;
+    border-radius: 10px;
+}
+
+.register-page .register form p a {
+    color: #cd000f;
+    text-decoration: none;
+}

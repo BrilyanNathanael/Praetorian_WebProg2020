@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.transaction-page {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.transaction-page nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 4em;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 1px 10px 1px #adaaaa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.transaction-page nav a {
+    text-decoration: none;
+    color: #cd000f;
+}
+
+.transaction-page nav .nav-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.transaction-page nav .nav-right a {
+    padding: .3em .5em;
+    color: #adaaaa;
+}
+
+.transaction-page nav .nav-right .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.transaction-page nav .nav-right .dropdown .drop-user {
+    padding: .3em .5em;
+    margin: 0;
+    background-color: white;
+    color: #adaaaa;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.transaction-page nav .nav-right .dropdown .drop-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 30px;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: .3em;
+}
+
+.transaction-page nav .nav-right .dropdown:hover .drop-content {
+    display: flex;
+}
+
+.transaction-page nav .nav-right .dropdown .drop-content a {
+    padding: .5em 1em;
+}
+
+.transaction-page .transaction-orders {
+    padding: 8em 3em;
+    background-color: white;
+}
+
+.transaction-page .transaction-orders .no-trans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-page .transaction-orders .no-trans p {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: .5em;
+}
+
+.transaction-page .transaction-orders .aksi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transaction-page .transaction-orders .aksi a {
+    color: #cd000f;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.transaction-page .transaction-orders .aksi a:hover {
+    color: #AB1414;
+    transition: .5s;
+}
+
+.transaction-page .footer .nav-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.transaction-page .footer .nav-footer a {
+    color: #f0ebeb;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.transaction-page .footer .nav-footer .nav-foot-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3em;
+}
+
+.transaction-page .footer .nav-footer .nav-foot-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-page .footer .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkslategrey;
+    padding: 1.5em 6em 1em 6em;
+}
+
+.transaction-page .footer .footer-list .contact a {
+    text-decoration: none;
+}
+
+.transaction-page .footer .footer-list .contact img {
+    width: 25px;
+    margin: 0 .3em;
+}
+
+.transaction-page .footer .foots {
+    background-color: black;
+    padding: 1em 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.transaction-page .footer .foots h2 {
+    color: #f0ebeb;
+}
+
+.transaction-page .footer .foots .foots-ident {
+    color: #f0ebeb;
+    text-align: right;
+}

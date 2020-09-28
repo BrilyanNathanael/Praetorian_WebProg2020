@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.cart-page {
+    background-color: #fbfbfb;
+    min-height: 100vh;
+}
+
+.cart-page nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 4em;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 1px 10px 1px #adaaaa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.cart-page nav a {
+    text-decoration: none;
+    color: #cd000f;
+}
+
+.cart-page nav .nav-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-page nav .nav-right a {
+    padding: .3em .5em;
+    color: #adaaaa;
+}
+
+.cart-page nav .nav-right .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cart-page nav .nav-right .dropdown .drop-user {
+    padding: .3em .5em;
+    margin: 0;
+    background-color: white;
+    color: #adaaaa;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart-page nav .nav-right .dropdown .drop-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 30px;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: .3em;
+}
+
+.cart-page nav .nav-right .dropdown:hover .drop-content {
+    display: flex;
+}
+
+.cart-page nav .nav-right .dropdown .drop-content a {
+    padding: .5em 1em;
+}
+
+.cart-page .shopping {
+    padding: 8em 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cart-page .no-cart {
+    padding: 8em 8em 5em 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-page .no-cart p {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 1em;
+}
+
+.cart-page .shopping .carts {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-page .shopping .cart-list {
+    border-top: 5px solid #E6E6E6;
+    padding: 2em 1em 2em 3em;
+    background-color: #ffffff;
+    width: 38em;
+    margin-bottom: 1em;
+}
+
+.cart-page .shopping .cart-list .name-delete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-page .shopping .cart-list .name-delete form button {
+    background-color: white;
+    border: 0;
+}
+
+.cart-page .shopping .cart-list .name-delete img {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: white;
+}
+
+.cart-page .shopping .cart-list .cart-content {
+    width: 100%;
+}
+
+.cart-page .shopping .cart-list .cart-lister {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cart-page .shopping .cart-list img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin-right: 3em;
+}
+
+.cart-page .shopping .total-prices {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 6px 6px #f0f0f0;
+    padding: 2em;
+    border-radius: 10px;
+    width: 20em;
+    height: 13em;
+}
+
+.cart-page .shopping .total-prices .red-line {
+    width: 5em;
+    height: 5px;
+    background-color: #cd000f;
+    border-bottom-right-radius: 10px;
+}
+
+.cart-page .shopping .total-prices .total {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1.5em;
+}
+
+.cart-page .shopping .total-prices .buy button {
+    background-color: #cd000f;
+    border-radius: 10px;
+    transition: .3s;
+    border: 0;
+    text-align: center;
+    padding: .5em 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.cart-page .shopping .total-prices .buy button:hover {
+    background-color: #AB1414;
+    transition: .3s
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body form {
+    width: 100%;
+    padding-right: 3em;
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body form .pay {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body form .pay button {
+    padding: .2em 1em;
+    border-radius: 10px;
+    background-color: #cd000f;
+    border: 0;
+    color: #ffffff;
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body .list-item {
+    border-left: 1px solid black;
+    width: 60%;
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body .list-item h2 {
+    text-align: center;
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body .list-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: .5em;
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body .list-item .item-content {
+    width: 100%;
+    padding: 0 2em;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.cart-page .shopping .total-prices .modal-dialog .modal-body .list-item .total-pay {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2em;
+    color: #cd000f;
+}
+
+.cart-page .footer .nav-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-page .footer .nav-footer a {
+    color: #f0ebeb;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.cart-page .footer .nav-footer .nav-foot-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3em;
+}
+
+.cart-page .footer .nav-footer .nav-foot-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-page .footer .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkslategrey;
+    padding: 1.5em 6em 1em 6em;
+}
+
+.cart-page .footer .footer-list .contact a {
+    text-decoration: none;
+}
+
+.cart-page .footer .footer-list .contact img {
+    width: 25px;
+    margin: 0 .3em;
+}
+
+.cart-page .footer .foots {
+    background-color: black;
+    padding: 1em 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart-page .footer .foots h2 {
+    color: #f0ebeb;
+}
+
+.cart-page .footer .foots .foots-ident {
+    color: #f0ebeb;
+    text-align: right;
+}

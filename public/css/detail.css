@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.detail-page {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.detail-page nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 4em;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 1px 10px 1px #adaaaa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.detail-page nav a {
+    text-decoration: none;
+    color: #cd000f;
+}
+
+.detail-page nav .nav-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-page nav .nav-right a {
+    padding: .3em .5em;
+    color: #adaaaa;
+}
+
+.detail-page nav .nav-right .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.detail-page nav .nav-right .dropdown .drop-user {
+    padding: .3em .5em;
+    margin: 0;
+    background-color: white;
+    color: #adaaaa;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.detail-page nav .nav-right .dropdown .drop-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 30px;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: .3em;
+}
+
+.detail-page nav .nav-right .dropdown:hover .drop-content {
+    display: flex;
+}
+
+.detail-page nav .nav-right .dropdown .drop-content a {
+    padding: .5em 1em;
+}
+
+.detail-page .transaksi-content {
+    padding: 6em 5em;
+}
+
+.detail-page .transaksi-content .transaksi-all {
+    background-color: white;
+    padding: 1em 5em;
+    border-radius: 20px;
+}
+
+.detail-page .transaksi-content .transaksi-all .orders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
+.detail-page .transaksi-content .transaksi-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.detail-page .transaksi-content .transaksi-all .transaksi-aksi {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.detail-page .transaksi-content .transaksi-all .transaksi-aksi a {
+    margin-right: 1em;
+    background-color: white;
+    border: 3px solid #cd000f;
+    padding: .3em 1.8em;
+    border-radius: 10px;
+    color: #cd000f;
+    text-decoration: none;
+}
+
+.detail-page .transaksi-content .transaksi-all .transaksi-aksi form button {
+    padding: .3em .8em;
+    border-radius: 10px;
+    background-color: #cd000f;
+    border: 3px solid #cd000f;
+    color: white;
+    box-shadow: 1px 1px 1px 1px rgb(199, 195, 195);
+}
+
+.detail-page .footer .nav-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-page .footer .nav-footer a {
+    color: #f0ebeb;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.detail-page .footer .nav-footer .nav-foot-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3em;
+}
+
+.detail-page .footer .nav-footer .nav-foot-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-page .footer .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkslategrey;
+    padding: 1.5em 6em 1em 6em;
+}
+
+.detail-page .footer .footer-list .contact a {
+    text-decoration: none;
+}
+
+.detail-page .footer .footer-list .contact img {
+    width: 25px;
+    margin: 0 .3em;
+}
+
+.detail-page .footer .foots {
+    background-color: black;
+    padding: 1em 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detail-page .footer .foots h2 {
+    color: #f0ebeb;
+}
+
+.detail-page .footer .foots .foots-ident {
+    color: #f0ebeb;
+    text-align: right;
+}
